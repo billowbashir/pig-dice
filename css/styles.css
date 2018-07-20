@@ -1,0 +1,16 @@
+#gameplay{
+  background-color: lightblue;
+  border-radius: 10%;
+}
+.container{
+  background-position: center;
+  margin-left: 300px;
+  color:red;
+}
+#title{
+  text-align:center;
+}
+body{
+  background-image: url("../images/yellow-dice.jpg");
+
+}
