@@ -31,22 +31,21 @@
     <div class="row">
       <div class="col-md-8 opponent">
       <h1>choose your opponent</h1>
-      <form>
-      <input type="radio" name="opponent" value="player 2" required="" oninvalid="this.setCustomValidity('Please Select opponent')" oninput="setCustomValidity('')">player 2<br>
+      <form id="opponent"  method="post">
+      <input type="radio" name="opponent" value="player 2" id="player2" required="" oninvalid="this.setCustomValidity('Please Select opponent')" oninput="setCustomValidity('')">player 2<br>
       <input type="radio" name="opponent" value="computer">Computer<br>
-      <button type="submit" class="btn btn-primary"> play!</button>
+      <button action="submit" class="btn btn-primary" > play!</button>
       </form>
     </div>
 
     </div>
-    <div class="jumbotron">
+    <div class="jumbotron game">
+      
       <form class="rolldice" action="submit" method="post">
-
-
-      <button  >ROLL</button>
-      </form>
+      <button>ROLL</button>
       <p class="total"></p>
-    </div>
+      </form>
+   </div>
   </div>
 
 </body>
