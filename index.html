@@ -12,7 +12,7 @@
 
 <body>
   <h1 id="title">PIG DICE</h1>
-  <div class="container">
+  <div class="container main">
 
     <div class="row">
       <div class="col-md-8" id="gameplay">
@@ -32,21 +32,43 @@
       <div class="col-md-8 opponent">
       <h1>choose your opponent</h1>
       <form id="opponent"  method="post">
-      <input type="radio" name="opponent" value="player 2" id="player2" required="" oninvalid="this.setCustomValidity('Please Select opponent')" oninput="setCustomValidity('')">player 2<br>
+      <input type="radio" name="opponent" value="player 2" id="player" required="" oninvalid="this.setCustomValidity('Please Select opponent')" oninput="setCustomValidity('')">player 2<br>
       <input type="radio" name="opponent" value="computer">Computer<br>
       <button action="submit" class="btn btn-primary" > play!</button>
       </form>
     </div>
 
     </div>
-    <div class="jumbotron game">
-      
-      <form class="rolldice" action="submit" method="post">
-      <button>ROLL</button>
-      <p class="total"></p>
-      </form>
-   </div>
+      <div class="col-md-8 game">
+        <form class="fillName" action="index.html" method="post">
+          <label for="">player1</label><br>
+          <input type="text"id="inputtedPlayer1Name"><br>
+          <label for="">player2</label><br>
+          <input type="text" id="inputtedPlayer2Name"><br>
+          <button action="submit" class="btn btn-primary" > submit</button>
+        </form>
+      </div>
+</div>
+<div id="game-screen">
+  <div id="player1">
+    <h1>PlayerName: <span id="player1name"></span> <br>Turn Score: <span id="player1turnscore"></span><br>Total Score: <span id="player1totalscore"></span></h1>
+    <form class="player1rolldice" action="submit" method="post">
+    <button>ROLL</button>
+ <p class="player1total"></p>
+    </form>
   </div>
+
+<div id="player2">
+  <h1>PlayerName: <span id="player2name"></span> <br>Turn Score: <span id="player1turnscore"></span><br>Total Score: <span id="player1totalscore"></span></h1>
+  <form class="player2rolldice" action="submit" method="post">
+  <button>ROLL</button>
+<p class="player2total"></p>
+  </form>
+</div>
+
+
+</div>
+
 
 </body>
 

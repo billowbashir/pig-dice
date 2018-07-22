@@ -23,6 +23,19 @@ display: none;
 background-color: lightblue;
 margin-top: 50px;
 margin-right: 350px;
-height: 100px;
   border-radius: 10%;
+}
+.rolldice{
+  text-align: center;
+}
+#game-screen{
+  background-color: lightblue;
+  margin-top: 50px;
+  height: 300px;
+}
+#player1{
+  float: left;
+}
+#player2{
+  float: right;
 }
