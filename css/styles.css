@@ -1,41 +1,49 @@
-#gameplay{
+#gameplay {
   background-color: lightblue;
   border-radius: 10%;
 }
-.container{
+
+.container {
   background-position: center;
   margin-left: 300px;
 }
-#title{
-  text-align:center;
-}
-body{
-  background-image: url("../images/yellow-dice.jpg");
 
+#title {
+  text-align: center;
 }
-.opponent{
+
+body {
+  background-image: url("../images/yellow-dice.jpg");
+}
+
+.opponent {
   background-color: lightblue;
   margin-top: 50px;
   border-radius: 10%;
 }
-.game{
-display: none;
-background-color: lightblue;
-margin-top: 50px;
-margin-right: 350px;
+
+.game {
+  display: none;
+  background-color: lightblue;
+  margin-top: 50px;
+  margin-right: 350px;
   border-radius: 10%;
 }
-.rolldice{
+
+.rolldice {
   text-align: center;
 }
-#game-screen{
+
+#game-screen {
   background-color: lightblue;
   margin-top: 50px;
   height: 300px;
 }
-#player1{
+
+#player1 {
   float: left;
 }
-#player2{
+
+#player2 {
   float: right;
 }
